@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+    font-family: 'Julius Sans One', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.panel:first-child {
+    background-color: #6B3074;
+}
+
+.panel:nth-child(2) {
+    background-color: #7268A6;
+}
+
+.panel:nth-child(3) {
+    background-color: #86A3C3;
+}
+
+.panel:nth-child(4) {
+    background-color: #B6CEC7;
+}
+
+.btn {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 18px;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px -5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: hotpink;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .panel {
+        width: 45%;
+    }
+    
+    h1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
